@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Top 10 Favorites</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: "Times New Roman", Times, serif; 
+            /* Swapped the broken image for a reliable background color/gradient */
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background-attachment: fixed;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #000;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+        }
+
+        .card {
+            border: 1px solid red; 
+            background-color: rgba(255, 255, 255, 0.95); 
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+        }
+
+        .card-header {
+            align-self: flex-start;
+            font-size: 1rem;
+            margin: 10px 10px 20px 10px;
+            color: #000;
+        }
+
+        .card-img-placeholder {
+            width: 80%;
+            height: 120px;
+            margin: 0 auto 20px auto;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+
+        .card-img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-desc {
+            font-size: 0.85em;
+            font-style: italic;
+            color: #000;
+            text-align: center;
+            padding: 0 15px;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 1000px) {
+            .container { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .container { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 400px) {
+            .container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Top 10 Favorite Movies</h1>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">Top 1</div>
+            <div class="card-img-placeholder">
+                <img src="haikyuu.png.webp" alt="Haikyuu">
+            </div>
+            <div class="card-desc"><strong>Haikyuu Dumpster Battle</strong><br><br>The epic national tournament volleyball match between longtime rivals Karasuno and Nekoma.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Top 2</div>
+            <div class="card-img-placeholder">
+                <img src="grand.png.webp" alt="Gran turismo">
+            </div>
+            <div class="card-desc"><strong>Gran Turismo</strong><br><br>The thrilling true story of a teenage PlayStation gamer who uses his virtual skills to become a real-life professional race car driver.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Top 3</div>
+            <div class="card-img-placeholder">
+                <img src="f1.png.webp" alt="f1">
+            </div>
+            <div class="card-desc"><strong>F1 The Movie</strong><br><br>A veteran Formula One driver comes out of retirement to mentor a hotshot rookie on a struggling underdog racing team.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Top 4</div>
+            <div class="card-img-placeholder">
+                <img src="kungfu.png.webp" alt="kungfu">
+            </div>
+            <div class="card-desc"><strong>KungFu Yoga</strong><br><br>A Chinese archaeology professor teams up with Indian researchers to locate a lost ancient Tibetan treasure using kung fu and yoga.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Top 5</div>
+            <div class="card-img-placeholder">
+                <img src="formers.png.webp" alt="transformers">
+            </div>
+            <div class="card-desc"><strong>Transformers Their War Our Word</strong><br><br>An ancient war between two alien robot factions, the Autobots and the Decepticons, culminates on Earth with the fate of humanity hanging in the balance.</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Top 6</div>
+            <div class="card-img-placeholder">
+                <img src="rush.png.webp" alt="rush hour">
+            </div>
+            <div class="card-desc"><strong>Rush Hour 2</strong><br><br>Mismatched detectives battle a deadly counterfeiting ring while on vacation in Hong Kong.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Top 7</div>
+            <div class="card-img-placeholder">
+                <img src="jumanji.png.webp" alt="jumanji">
+            </div>
+            <div class="card-desc"><strong>Jumanji</strong><br><br>A magical game unleashes dangerous jungle hazards into the real world with every move.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Top 8</div>
+            <div class="card-img-placeholder">
+                <img src="avaengers.png.webp" alt="avaengers">
+            </div>
+            <div class="card-desc"><strong>Avengers End Game</strong><br><br>The remaining heroes unite for an epic final stand to reverse Thanos's destruction and save the universe.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Top 9</div>
+            <div class="card-img-placeholder">
+                <img src="wol.webp" alt="deadpool">
+            </div>
+            <div class="card-desc"><strong>Deadpool & Wolverin</strong><br><br>A chaotic Marvel duo teams up on a multiverse mission to save Deadpool's home universe.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Top 10</div>
+            <div class="card-img-placeholder">
+                <img src="spider.webp" alt="spider">
+            </div>
+            <div class="card-desc"><strong>Spiderman No Way Home</strong><br><br>Peter Parker accidentally cracks open the multiverse, forcing him to face iconic villains from alternate realities.</div>
+        </div>
+    </div>
+
+</body>
+</html>
